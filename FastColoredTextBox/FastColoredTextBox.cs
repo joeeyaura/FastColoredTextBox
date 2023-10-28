@@ -2047,9 +2047,9 @@ namespace FastColoredTextBoxNS
             if (place.iLine < LinesCount && place.iChar < this[place.iLine].Count)
             {
 #if Styles32
-                var s = (uint) this[place].style;
+                var s = (uint)this[place].style;
                 for (int i = 0; i < 32; i++)
-                    if ((s & ((uint) 1) << i) != 0)
+                    if ((s & ((uint)1) << i) != 0)
                         result.Add(Styles[i]);
 #else
                 var s = (ushort)this[place].style;
@@ -5300,7 +5300,8 @@ namespace FastColoredTextBoxNS
                 graphics.DrawString("Recording...", font, Brushes.Red, new PointF(rect.Left + h, rect.Top));
             System.Threading.Timer tm = null;
             tm = new System.Threading.Timer(
-                (o) => {
+                (o) =>
+                {
                     Invalidate(rect);
                     tm.Dispose();
                 }, null, 200, System.Threading.Timeout.Infinite);
