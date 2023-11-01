@@ -12,3 +12,9 @@ It has such settings as foreground color, font style, background color which can
 More details http://www.codeproject.com/Articles/161871/Fast-Colored-TextBox-for-syntax-highlighting
 
 Nuget package https://www.nuget.org/packages/FCTB/
+
+ADDED: 
+* functions and properies to disable styles completely
+
+CHANGES
+* allowed hovering over functions with numbers in them to detect hints
